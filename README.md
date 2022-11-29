@@ -7,7 +7,7 @@ Part 1:
   variable, dataType, Boolean, Casting and String
   
 Part 2:
-  Python Collections such as List, Set, Dictionary
+  Python Collections such as List, Set, Dictionary, 
   Python iterators
   
 Part 3:
