@@ -5,7 +5,7 @@ print(s.upper())
 s = "CHANGE TO LOWER CASE"
 print(s.lower())
 
-# remove while space before or after a string
+# remove white space before or after a string
 s = " remove white space "
 print(s.strip())
 
