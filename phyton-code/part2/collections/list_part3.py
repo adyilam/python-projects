@@ -1,9 +1,8 @@
 products = ["Food", "Candy", "Shampoo", "Food"]
-# iterating through the list
+# iterating through the list, for loop
 for x in products:
     print(x)
 
-# ---
 for i in range(len(products)):
     print(products)
 
