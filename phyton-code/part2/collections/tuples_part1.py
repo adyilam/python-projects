@@ -24,4 +24,27 @@ try:
 except:
     print("Exception!!")
 
+# how negative index works in python
+numbers_tuple = ("one", "two", "ten", "five")
+print(numbers_tuple[-1])
+# to access a range of values we use slicing operator colon (:)
+print("printing element 0 to -4: ", numbers_tuple[-4:-1])
+# accessing unavailable index- value empty
+print("printing empty tuple: ", numbers_tuple[:-4])
+# printing all values using default [:]
+print("printing all elements: ", numbers_tuple[:])
 
+# delete specific tuple
+try:
+    if numbers_tuple: ["one"]
+    del numbers_tuple[1]
+    print(numbers_tuple)
+except Exception as e:
+    print(e)
+
+# delete tuple
+try:
+    del numbers_tuple
+    print(numbers_tuple)
+except Exception as e:
+    print(e)
