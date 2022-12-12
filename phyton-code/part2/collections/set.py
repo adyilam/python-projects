@@ -29,3 +29,10 @@ print(colors)
 # update the original set
 colors.update(["WHITE"])
 print(colors)
+
+# removing elements from set using discard(), remove()
+# colors.remove([0])  # you can't access set element by index
+colors.remove("RED")
+print(colors)
+colors.discard("WHITE")
+print(colors)
