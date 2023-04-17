@@ -1,4 +1,4 @@
-# pythonProject
+# Welcome to your Python learning journey!
 
 # Overview
 
