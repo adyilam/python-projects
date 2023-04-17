@@ -1,7 +1,11 @@
 # pythonProject
 
-This is Python programming language basic to advanced code demonstration.
-In this project we  will cover the full course of python programming language.
+# Overview
+
+Python is a versatile and powerful programming language that is widely used in 
+various domains, including web development, data science, machine learning, scientific computing, and more.
+
+In this demonstration, we will cover from python basics to advanced coding practices.
 
 Part 1: 
   variable, dataType, Boolean, Casting and String
@@ -14,5 +18,5 @@ Part 3:
   Python conditions, Loops and Functions
   
  part 4:
-  Python OOPs (Objects, inheritance, abstraction)
+  Python OOPs (Objects, Classes, inheritance, abstraction)
  
