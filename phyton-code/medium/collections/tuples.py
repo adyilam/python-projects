@@ -61,7 +61,7 @@ for elem in numbers_tuple:
     print(elem)
 
 # try printing elements in the index that doesn't exist
-products_ = ["TV", "LAPTOPS", "BATTERIES"]
+products_ = ("TV", "LAPTOPS", "BATTERIES")
 print(products_[0])
 try:
     print(products_[4])
@@ -71,3 +71,8 @@ except Exception as e:
 # nested tuple
 nested_tuple_ = ([1, 2, 3, 4], [9, 8, 7, 5])
 print(nested_tuple_[1][1])
+
+# concatenate tuples
+tuple1_ = (1, 2, 3, 4)
+tuple2_ = (5, 6, 7)
+print(tuple1_ + tuple2_)
