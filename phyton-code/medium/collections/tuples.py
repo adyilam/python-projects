@@ -60,3 +60,14 @@ print(numbers_tuple.index("two"))
 for elem in numbers_tuple:
     print(elem)
 
+# try printing elements in the index that doesn't exist
+products_ = ["TV", "LAPTOPS", "BATTERIES"]
+print(products_[0])
+try:
+    print(products_[4])
+except Exception as e:
+    print(e)
+
+# nested tuple
+nested_tuple_ = ([1, 2, 3, 4], [9, 8, 7, 5])
+print(nested_tuple_[1][1])
