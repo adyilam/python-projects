@@ -24,3 +24,11 @@ print("Numbers before removed", numbers)
 user_choice = int(input("Enter the number to be removed: "))
 numbers.discard(user_choice)
 print("Numbers After removed", numbers)
+
+# set operation, union or | operator, helps to print common elements
+print(color_set1 | color_set2)
+print(color_set1.union(color_set2))
+
+# intersection of two sets, using & operator
+print(color_set1 & color_set2)
+print(color_set1.intersection(color_set2))

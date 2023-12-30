@@ -1,4 +1,4 @@
-# Lists are one of 4 built-in data types in Python used to store collections of data,
+# Lists are one of 4 built-in data types in Python used to store data_structure of data,
 # List is a collection which is ordered and changeable. Allows duplicate members.
 # the other 3 are Tuple, Set, and Dictionary
 
