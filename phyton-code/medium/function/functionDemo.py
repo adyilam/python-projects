@@ -150,8 +150,9 @@ from math import *
 
 exec("print(factorial(5))", {"factorial": factorial})
 
+
 # an exception will be raised
-exec("print(factorial(5))", {})  # NameError: name 'factorial' is not defined
+# exec("print(factorial(5))", {})    # NameError: name 'factorial' is not defined
 
 
 # filter() function is used to get filtered elements. This function takes two arguments,
@@ -162,6 +163,39 @@ def filterNumbers(num):
 
 
 # calling filterNumber()
-value = filter(filterNumbers, (2, 3, 4))
+value = filter(filterNumbers, (1, 2, 3, 4))
 # print value
 print(list(value))
+
+# sum() function is used to get the sum of numbers of an iterable, i.e., list.
+numbers = [2, 4, 6, 9]
+print("Sum of numbers in the list: ", sum(numbers))
+
+# set() used to create a new set using elements passed during the call.
+# It takes an iterable object as an argument and returns a new set object.
+string = "change to set object"
+result = set(string)
+print(result)
+
+# next() function is used to fetch next item from the collection.
+# create iterator
+number = iter([3, 4, 5])
+print("the first value:  ", next(number))
+print("the second value: ", next(number))
+print("the third value:  ", next(number))
+
+
+# isinstance() function is used to check whether the given object is an instance of that class
+class Employee:
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+
+employee = Employee("Molla Ababu", 500)
+list_ = [1, 2, 3, 4]
+isEmployee = isinstance(employee, Employee)
+isEmployee1 = isinstance(list_, Employee)
+print("Is it employee instance: ", isEmployee)
+print("Is it employee instance: ", isEmployee1)
