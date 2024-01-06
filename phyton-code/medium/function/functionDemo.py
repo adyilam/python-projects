@@ -230,3 +230,7 @@ squares_of_each_number = [lambda num=num: num ** 2 for num in range(0, 11)]
 print('The square value of all numbers from 0 to 10:')
 for square in squares_of_each_number:
     print(square(), end=" ")
+
+# lambda with if else condition
+is_odd_ = lambda x: True if (x % 2 != 0) else False
+print("\n Is it odd number: ", is_odd_(6))

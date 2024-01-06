@@ -17,6 +17,7 @@ def validate_age_length(age_int):
         print("Age cannot be less than 5, Try again: ")
     elif age_int > 89:
         print("Age cannot be greater than 89, Try Again: ")
+    else:
         return (age_int >= 5) and (age_int <= 89)
 
 
