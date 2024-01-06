@@ -202,7 +202,7 @@ print("Is it employee instance: ", isEmployee1)
 
 
 # Lambda Functions in Python are anonymous functions,function don't have a name
-# Lambda keyword in Python to define an unnamed function. like def key word  used to
+# Lambda keyword in Python to define an unnamed function. like def keyword  used to
 # create python function
 # syntax  lambda arguments: expression
 def multiply(x, y):
