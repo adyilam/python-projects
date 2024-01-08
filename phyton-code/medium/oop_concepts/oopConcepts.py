@@ -179,7 +179,7 @@ class Shape(ABC):
 
     # abstract method
     def area(self):
-        pass
+        pass  # this is a null statement which does nothing when executed, useful as a placeholder
 
 
 class Triangle(Shape):
