@@ -3,6 +3,7 @@ products = ["Food", "Candy", "Shampoo", "Food"]
 for x in products:
     print(x)
 
+# using range
 for i in range(len(products)):
     print(products)
 
@@ -29,10 +30,24 @@ for i in range(len(products)):
 def my_function(namelist):
     for j in range(len(namelist)):
         if namelist[j] == "":
-            pass      # leaving an empty the block using pass key
+            pass  # leaving an empty the block using pass key
         else:
             print("Name provided as " + namelist[j])  # the value at index 0 will not be displayed
 
 
 names = ["", "Smith", "john"]
-my_function(names)     # nothing will be displayed
+my_function(names)  # nothing will be displayed
+
+# list build up, start a list as the empty list [], then use append() or extend() to add elements
+list = []  # Start as the empty list
+list.append('1')  # Use append() to add elements
+list.append('4')
+print(list)
+
+# List Slices: work on lists just as with strings, and can also be used to change sub-parts of the list.
+list_ = ['1', '2', '3', '4']
+# print ['2', '3']
+print(list_[1:-1])
+# replace ['1', '2'] with ['5']
+list_[0:2] = '5'
+print(list_)
