@@ -8,6 +8,3 @@ def divide():
                 print(i)
         except:
             print("Error: Divisible by zero!")
-
-
-divide()
