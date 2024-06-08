@@ -7,4 +7,4 @@ def divide():
             if x / i == 1:  # divisible by zero error at index 4
                 print(i)
         except:
-            print("Error: Divisible by zero!")
+            print("Error found:  Divisible by zero!")
