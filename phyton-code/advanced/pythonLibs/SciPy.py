@@ -22,6 +22,3 @@ print(constants.gram)
 
 # 1 grain in kilogram
 print(constants.grain)
-
-
-
