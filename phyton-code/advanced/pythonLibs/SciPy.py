@@ -22,3 +22,30 @@ print(constants.gram)
 
 # 1 grain in kilogram
 print(constants.grain)
+
+# Optimizing Functions: all the algorithms in
+# Machine Learning are nothing more than a complex equation
+# that needs to be minimized with the help of given data.
+from scipy.optimize import root
+from math import cos
+
+
+def eqn(x):
+    return x + cos(x)
+
+
+myroot = root(eqn, 0)
+print(myroot.x)
+
+# Minimize the function
+# Minimize the function x^2 + x + 2 with BFGS
+from scipy.optimize import minimize
+
+
+def eqn(x):
+    return x ** 2 + x + 2
+
+
+mymin = minimize(eqn, 0, method='BFGS')
+
+print(mymin)
