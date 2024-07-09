@@ -49,3 +49,4 @@ def eqn(x):
 mymin = minimize(eqn, 0, method='BFGS')
 
 print(mymin)
+
