@@ -15,3 +15,15 @@ numbers = [34.6, -203.4, 44.9, 68.3, -12.2, 44.6, 12.7]
 newlist = []
 list_compr = [newlist for newlist in numbers if newlist >= 0]
 print(list_compr)
+
+# 5x5 matrix
+matrix = []
+for i in range(5):
+    # Append an empty sublist inside the list
+    matrix.append([])
+    for j in range(5):
+        # populates each sublist with values ranging from 0 to 4
+        matrix[i].append(j)
+print(matrix)
+
+
