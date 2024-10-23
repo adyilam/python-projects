@@ -1,4 +1,4 @@
-# List Comprehensions creates a new list based on another list
+# List Comprehensions creates a new list from range 1 to 10
 list_ = []
 for i in range(1, 10):
     list_.append(i)
@@ -16,7 +16,6 @@ newlist = []
 list_compr = [newlist for newlist in numbers if newlist >= 0]
 print(list_compr)
 
-
 # 5x5 matrix
 matrix = []
 for i in range(5):
@@ -26,5 +25,3 @@ for i in range(5):
         # populates each sublist with values ranging from 0 to 4
         matrix[i].append(j)
 print(matrix)
-
-
