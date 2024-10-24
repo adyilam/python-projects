@@ -23,13 +23,11 @@ lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 new_lst = list(filter(lambda x: x % 2 == 0, lst))
 print(new_lst)
 end_time = time.time_ns()
-exec_time = end_time - start_time
-print("Execution time: ", exec_time)
+print("Execution time: ", end_time - start_time)
 
 # using list comprehension
 start_time = time.time_ns()
 res = [val for val in lst if val % 2 == 0]
 print(res)
 end_time = time.time_ns()
-exec_time = end_time - start_time
-print("Execution time: ", exec_time)
+print("Execution time: ", end_time - start_time)
