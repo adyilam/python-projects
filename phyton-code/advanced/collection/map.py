@@ -35,4 +35,3 @@ def square(x):
 
 nums = (2, 3, 4, 5)
 square_of_a_number = map(square, nums)
-
