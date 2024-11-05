@@ -109,3 +109,13 @@ print(lst_rev)
 #  below list has numbers from 10 to 6 in step 2
 lst_rev_9_5_2 = lst[9: 4: -2]
 print(lst_rev_9_5_2)
+
+# more compact and readable code
+print([[x, y] for x in [1, 2, 3] for y in [4, 5, 6]])
+
+# equivalent to above
+results = []
+for x in [1, 2, 3]:
+    for y in [4, 5, 6]:
+        results.append([x, y])
+        print(results)
