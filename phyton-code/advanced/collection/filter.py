@@ -31,3 +31,23 @@ res = [val for val in lst if val % 2 == 0]
 print(res)
 end_time = time.time_ns()
 print("Execution time: ", end_time - start_time)
+
+
+# filter function, filter vowels
+def filter_vowels(variable):
+    letters = ['a', 'e', 'i', 'o', 'u']
+    if variable in letters:
+        return True
+    else:
+        return False
+
+
+# given letters
+random_letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
+# function call
+filtered_letters = filter(filter_vowels, random_letters)
+
+# display filtered letters
+for l in filtered_letters:
+    print(l)
