@@ -7,6 +7,14 @@ Syntax: Object Definition
 
 obj = ClassName()
     # Statement
+---
+class MyClass:
+    def __init__(self, arg1, arg2):
+        self.arg1 = arg1
+        self.arg2 = arg2
+    def some_method(self):
+        # Method definition
+        pass
 
 Some points on Python class:
 
@@ -27,7 +35,7 @@ obj = MyClass(att)
 print(obj.att)
 
 
-# class Dog
+# class Car
 class Car:
     # Class Variable
     vehicle = 'car'
@@ -52,5 +60,5 @@ BMW = Car("white", "X4")
 print(BMW.color, BMW.model)
 BMW.function()
 
-# calling class variable using Car
+# calling class variable using class name
 print("value of class variable: ", Car.vehicle)
