@@ -7,6 +7,14 @@ Syntax: Object Definition
 
 obj = ClassName()
     # Statement
+---
+class MyClass:
+    def __init__(self, arg1, arg2):
+        self.arg1 = arg1
+        self.arg2 = arg2
+    def some_method(self):
+        # Method definition
+        pass
 
 Some points on Python class:
 
