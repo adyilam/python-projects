@@ -27,7 +27,7 @@ obj = MyClass(att)
 print(obj.att)
 
 
-# class Dog
+# class Car
 class Car:
     # Class Variable
     vehicle = 'car'
@@ -52,5 +52,5 @@ BMW = Car("white", "X4")
 print(BMW.color, BMW.model)
 BMW.function()
 
-# calling class variable using Car
+# calling class variable using class name
 print("value of class variable: ", Car.vehicle)
