@@ -36,7 +36,7 @@ class Animal(object):
 
 
 # object of Animal
-cat = Animal("kitty", "Miaow")
+cat = Animal("kitty", "Meow")
 cat.make_sound()
 
 
@@ -48,7 +48,7 @@ class Dog(Animal):
 
 
 # create Dog instance
-dog = Dog("Alex", "wuff wuff")
+dog = Dog("Alex", "woof")
 
 # calling parent class function
 dog.make_sound()
