@@ -25,7 +25,7 @@ result1 = map(lambda x1, x2: x1 + x2, list1_, list2_)
 print(list(result1))
 
 
-# print the square of even numbers from the given list
+# print the square of even numbers from the given list, map
 def square(x):
     if x % 2 != 0:
         return x
@@ -35,4 +35,3 @@ def square(x):
 
 nums = (2, 3, 4, 5)
 square_of_a_number = map(square, nums)
-print(list(square_of_a_number))
