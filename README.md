@@ -18,7 +18,7 @@ Part 3:
   Python conditions, Loops and Functions
   
  part 4:
-  Python OOPs (Objects, Classes, inheritance, abstraction)
+  Python OOPs (Objects, Classes, inheritance, data abstraction, polymorphism, operation overload)
 
  part 5:
   python Libraries NumPy , SciPy, TensorFlow , PyTorch
