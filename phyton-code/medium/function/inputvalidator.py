@@ -52,5 +52,4 @@ def hello_to_you(first_name, last_name):
     print(f"Hello, {first_name} {last_name}")
 
 
-hello_to_you("Timmy", "Jones")  # Output:
-# Hello,Timmy Jones
+hello_to_you("Timmy", "Jones")  # Output: Hello,Timmy Jones

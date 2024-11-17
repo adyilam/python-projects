@@ -65,6 +65,7 @@ the child class to ensure proper initialization.
 """
 
 
+# single inheritance
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -80,3 +81,35 @@ class Dog(Animal):
 dog = Dog("jack", "Shepperd")
 print(dog.name)
 print(dog.breed)
+
+
+# multiple inheritances
+# Python example to show the working of multiple
+# inheritance
+
+class Animal(object):
+    def __init__(self):
+        self.name1 = "Animal"
+        print("Animal class")
+
+
+class Dog(object):
+    def __init__(self):
+        self.name2 = "Dog"
+        print("Dog class")
+
+
+class Cat(Animal, Dog):
+    def __init__(self):
+        # Calling constructors of Animal
+        # and Base2 classes
+        Animal.__init__(self)
+        Dog.__init__(self)
+        print("Derived")
+
+    def printname(self):
+        print(self.name1, self.name2)
+
+
+ob = Cat()
+ob.printname()
