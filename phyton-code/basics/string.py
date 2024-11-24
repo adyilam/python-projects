@@ -20,7 +20,7 @@ print(s.split(":"))
 # concatenate string
 x = "Hello"
 y = "there"
-print(x+y)
+print(x + y)
 print(x + " " + y)
 
 z = 10
@@ -32,5 +32,7 @@ x = "HELLO"
 print(x.casefold())
 print("length of x " + str(len(x)))
 
-
-
+# modify string
+s = "Hello there"
+print(s.upper())
+print(s.lower())
