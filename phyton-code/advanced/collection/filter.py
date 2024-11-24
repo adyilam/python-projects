@@ -30,7 +30,7 @@ start_time = time.time_ns()
 res = [val for val in lst if val % 2 == 0]
 print(res)
 end_time = time.time_ns()
-print("Execution time: ", end_time - start_time)
+print(f"Execution time: ", end_time - start_time)
 
 
 # filter function, filter vowels
