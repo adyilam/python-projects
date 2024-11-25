@@ -37,7 +37,7 @@ class Dog(Animal):
 
 
 # Create an object of the Dog class
-dog = Dog("Rockey", "German Shepherd")
+dog = Dog("Alex", "German Shepherd")
 
 # Access attributes and methods
 print(dog.name)  # Inherited from Animal
