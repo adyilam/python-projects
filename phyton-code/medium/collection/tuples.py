@@ -1,8 +1,9 @@
-# A collection of ordered and immutable objects is known as a tuple.
-# Tuples and lists are similar as they both are sequences.
-# Tuples can not modify, but we can modify list after created
-# When we create Tuples used parenthesis, List used square brackets
-
+"""
+A collection of ordered and immutable objects is known as a tuple.
+Tuples and lists are similar as they both are sequences.
+Tuples can not modify, but we can modify list after created
+When we create Tuples used parenthesis, List used square brackets
+"""
 # how to create tuple in different types and forms
 activity_tuple_string = ("Music", "Movie", "Sport")
 int_tuple = (10, 20, 30)
