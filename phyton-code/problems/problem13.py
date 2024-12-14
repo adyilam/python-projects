@@ -21,6 +21,9 @@ Sample output
     Alen Chris
 """
 
+# Option 1
+print("\n Option 1: ")
+
 
 def capitalize_string(str):
     for i in range(len(str)):
@@ -30,3 +33,21 @@ def capitalize_string(str):
 name = "hello world"
 capitalized_name = name.split()
 capitalize_string(capitalized_name)
+
+# Option 2
+print("\n Option 2: ")
+
+
+def solve(s):
+    output = []
+    name = s.split(" ")
+
+    for i in range(len(name)):
+        output.append(name[i].capitalize())
+
+    return " ".join(output).strip()
+
+
+s = " hello  world  lol  "
+res = solve(s)
+print(res)
