@@ -12,29 +12,21 @@ listed above. Iterate through each command in order and perform the correspondin
 
 """
 
-# list append
-my_list = [1, 2, 3]
-my_list.append(4)
-print(my_list)
-
-# list insert
-my_list.insert(0, 5)
-print(my_list)
-
 # Solution for the above problem
 mylist = []
-N = int(input("Enter number of commands ? "))
-cmd = input().split(" ")
+N = int(input().strip())
 
-for i in range(N):
+for _ in range(N):
+    cmd = input().strip().split()
+
     if cmd[0] == "insert":
-        mylist.insert(int(cmd[-2]), int(cmd[-1]))
+        mylist.insert(int(cmd[1]), int(cmd[2]))
     elif cmd[0] == "print":
         print(mylist)
     elif cmd[0] == "remove":
-        mylist.remove(int(cmd[-1]))
+        mylist.remove(int(cmd[1]))
     elif cmd[0] == "append":
-        mylist.append(int(cmd[-1]))
+        mylist.append(int(cmd[1]))
     elif cmd[0] == "sort":
         mylist.sort()
     elif cmd[0] == "pop":
@@ -42,4 +34,4 @@ for i in range(N):
     elif cmd[0] == "reverse":
         mylist.reverse()
     else:
-        print("Invalid command")
+        print(f"Invalid command: {cmd[0]}")
