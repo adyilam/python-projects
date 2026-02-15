@@ -5,7 +5,7 @@ Inheritance allows you to inherit the properties of a class, i.e., base class to
 i.e., derived class. The benefits of Inheritance in Python are as follows:
 
 - It represents real-world relationships well.
-- It provides the reusability of a code. We don’t have to write the same code again and again. Also,
+- It provides the re-usability of a code. We don’t have to write the same code again and again. Also,
 - It allows us to add more features to a class without modifying it.
 - It is transitive in nature, which means that if class B inherits from another class A, then all
   the subclasses of B would automatically inherit from class A.
@@ -53,5 +53,5 @@ dog = Dog("Alex", "woof")
 # calling parent class function
 dog.make_sound()
 
-# call parent class function
+# calling a child class function
 dog.show()
