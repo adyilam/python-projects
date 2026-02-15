@@ -1,6 +1,8 @@
 # Given records
 # records = [["chi", 20.0], ["beta", 50.0], ["alpha", 50.0]]
-records = [["Harry", 37.21], ["Berry", 37.21], ["Tina", 37.2], ["Akriti", 41], ["Harsh", 39]]
+# records = [["Harry", 37.21], ["Berry", 37.21], ["Tina", 37.2], ["Akriti", 41], ["Harsh", 39]]
+
+records = [[4, "Rachel"], [-50, "Mawer"], [-50, "Sheen"], [-50, "Shaheen"], [51, ""]]
 
 # Extract valid records with numeric grades
 valid_records = [(name, float(grade)) for name, grade in records if

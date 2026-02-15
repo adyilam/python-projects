@@ -28,6 +28,7 @@ Sample Output
 
 country = []
 
+
 def get_distinct_country_stamp(N, countries):
     country_set = set()  # Initialize an empty set
     for country in countries:  # Iterate through the list of countries

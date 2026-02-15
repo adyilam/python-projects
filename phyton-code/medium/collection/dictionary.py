@@ -6,15 +6,14 @@
 # A dictionary is, in other words, a group of key-value pairs,
 # where the values can be any Python object.
 # The keys, in contrast, are immutable Python objects, such as strings, tuples, or numbers.
-from typing import Dict, Union
 
 # crate empty dictionary
 dict_ = {}
 print("Empty dictionary: ", dict_)
 
 # creating dictionary
-dict = {"Name": "laptop", "accessories": "charger", "description": "electronics"}  # syntax
-print("Electronics in dictionary: ", dict)
+d = {"Name": "laptop", "accessories": "charger", "description": "electronics"}  # syntax
+print("Electronics in dictionary: ", d)
 
 # get the length of dict
 print("length of dict:   ", len(dict))

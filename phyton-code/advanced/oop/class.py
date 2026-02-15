@@ -20,7 +20,8 @@ Some points on Python class:
 
 Classes are created by keyword class.
 Attributes are the variables that belong to a class.
-Attributes are always public and can be accessed using the dot (.) operator. Eg: My class.Attribute
+Attributes are always public and can be accessed using the dot (.) operator.
+Eg: My class.Attribute
 
 """
 
@@ -38,18 +39,23 @@ print(obj.att)
 # class Car
 class Car:
     # Class Variable
-    vehicle = 'car'
+    vehicle = 'car'  # class attribute, shared across all instance of Car class
 
     # init method or constructor
     def __init__(self, color, model):
         # Instance Variable
-        self.color = color
-        self.model = model
+        self.color = color  # instance attribute
+        self.model = model  # instance attribute
 
     # Sample Method
-    def function(self):
+    def function(self):  # self: refers current object, used to store data.
         print(self.color)
         print(self.model)
+
+    # __str__ method in Python allows us to define
+    # a custom string representation of an object.
+    def __str__(self):  # By default, when we print an object or convert it to a string using str(),
+        return f"{self.color} and {self.model} vehicle."
 
 
 # Object of Car class, BMW
@@ -62,3 +68,5 @@ BMW.function()
 
 # calling class variable using class name
 print("value of class variable: ", Car.vehicle)
+print("Accessing class attribute via object BMW: " + BMW.vehicle)
+print(BMW)    # _str__ string representation will execute
