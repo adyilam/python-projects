@@ -152,8 +152,8 @@ class Dog(Animal):
         print(self.name, ": is sound of a Dog")
 
 
-cat = Cat("miaow")
+cat = Cat("meows")
 cat.sound()
 
-dog = Dog("woff")
+dog = Dog("woof")
 dog.sound()
