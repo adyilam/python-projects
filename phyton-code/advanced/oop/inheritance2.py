@@ -65,13 +65,13 @@ the child class to ensure proper initialization.
 """
 
 
-# single inheritance
+# 1. single inheritance
 class Animal:
     def __init__(self, name):
         self.name = name
 
 
-class Dog(Animal):
+class Dog(Animal):  # Dog inherits from Animal
     def __init__(self, name, breed):
         super().__init__(name)
         self.breed = breed
@@ -83,7 +83,7 @@ print(dog.name)
 print(dog.breed)
 
 
-# multiple inheritances
+# 2. multiple inheritances- a child class can inherit from more than one parent class
 # Python example to show the working of multiple
 # inheritance
 
@@ -99,7 +99,7 @@ class Dog(object):
         print("Dog class")
 
 
-class Cat(Animal, Dog):
+class Cat(Animal, Dog):  # inherit from both Animal and Dog
     def __init__(self):
         # Calling constructors of Animal
         # and Base2 classes
@@ -113,3 +113,47 @@ class Cat(Animal, Dog):
 
 ob = Cat()
 ob.printname()
+
+
+# 3. multilevel Inheritance- a class is derived from another derived class.
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+
+class Cat(Animal):
+    def sound(self):
+        print(self.name, "is an animal")
+
+
+class Dog(Cat):
+    def classification(self, classification):
+        print(self.name, "is: ", classification)
+
+
+dog = Dog("Type")
+dog.sound()
+dog.classification("Carnivorous")
+
+
+# 4. hierarchical inheritance - multiple child classes inherit from the same parent class.
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+
+class Cat(Animal):
+    def sound(self):
+        print(self.name, ": is sound of a Cat")
+
+
+class Dog(Animal):
+    def sound(self):
+        print(self.name, ": is sound of a Dog")
+
+
+cat = Cat("miaow")
+cat.sound()
+
+dog = Dog("woff")
+dog.sound()
