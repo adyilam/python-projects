@@ -14,3 +14,20 @@ Purpose: To simplify interaction with objects by focusing on high-level operatio
 Implementation: Achieved through abstract classes and methods, interfaces, and high-level class design.
 
 """
+
+
+class Person:
+
+    def __init__(self, name, age):
+        self.name = name  # public attribute
+        self.__age = age  # private attribute , by keeping__age variable private inside Person class.
+
+    def show_age(self):  # using a public method to access a private attribute __age
+        print("Age: ", self.__age)
+
+
+per = Person("Samuel", 23)
+print(per.name)
+# private members cannot be accessed directly from outside the class.
+# print(per.__age)    # this show an issue, because __age is private attribute.
+per.show_age()
