@@ -34,7 +34,7 @@ print(cal.addation(3, 4, 5))
 
 class Animal:
     def sound(self):
-        return "Some generic sound"
+        return "sound of Animals"
 
 
 class Dog(Animal):
@@ -51,3 +51,23 @@ class Cat(Animal):
 animals = [Dog(), Cat(), Animal()]
 for animal in animals:
     print(animal.sound())
+
+
+# Polymorphism in Functions
+class TV:
+    def use(self):
+        return "Electricity"
+
+
+class Radio:
+    def use(self):
+        return "Battery"
+
+
+# polymorphism lets functions accept different object types as long as they support needed behavior
+def show_use(tool):
+    print(tool.use())
+
+
+show_use(TV())
+show_use(Radio())
