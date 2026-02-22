@@ -8,7 +8,7 @@
 
 # Project Structure
     python-projects/
-       ├── /python-code.py
+       ├── python-code/
            ├── pythonLibs/
                 ├── fastapi-example.py
                 ├── README.md
