@@ -1,56 +1,54 @@
-FastAPI Example Service
-    A simple FastAPI backend service demonstrating how to create and run a REST API using Python.
-
-Overview
+# Overview
     This project is a minimal FastAPI service that:
-    Exposes HTTP endpoints
-    Returns JSON responses
-    Automatically generates API documentation
-    Runs using Uvicorn ASGI server
+        Exposes HTTP endpoints
+        Returns JSON responses
+        Automatically generates API documentation
+        Runs using Uvicorn ASGI server
 
 
-Project Structure
+# Project Structure
     python-projects/
-    ├── /python-code.py
-           |__pythonLibs/
-                |__ fastapi-example.py
-                |__ README.md
+       ├── /python-code.py
+           ├── pythonLibs/
+                ├── fastapi-example.py
+                ├── README.md
 
-Requirements
+# Requirements
     Python 3.8+
     pip3
 
-Installation
+# Installation
     Clone the repository
     git clone <your-repo-url>
     cd fastapi-example
 
-Create virtual environment (recommended)
+# Create virtual environment (recommended)
     Mac/Linux:
     python -m venv venv
     source venv/bin/activate
 
 
-Windows:
+# Windows:
     python -m venv venv
     venv\Scripts\activate
 
-Install dependencies
+# Install dependencies
     pip install fastapi uvicorn
 
 
-Running the Application
+# Running the Application
     Start the FastAPI service:
     uvicorn main:app --reload
 
 If your file is inside a folder the same as this project (e.g., python-projects/python-code/advanced/pythonlibs/fastapi-example.py), 
-run: uvicorn phyton-code.advanced.pythonlibs.fastapi-example:app --reload
+# run: 
+    uvicorn phyton-code.advanced.pythonlibs.fastapi-example:app --reload
 
-Access the Service
+# Access the Service
     After running, the API will be available at:
     http://127.0.0.1:8000
 
 
-interactive API Documentation
+# Interactive API Documentation
     Swagger UI:
     http://127.0.0.1:8000/docs
