@@ -8,10 +8,10 @@
 
 # Project Structure
     python-projects/
-    ├── /python-code.py
-           |__pythonLibs/
-                |__ fastapi-example.py
-                |__ README.md
+       ├── /python-code.py
+           ├── pythonLibs/
+                ├── fastapi-example.py
+                ├── README.md
 
 # Requirements
     Python 3.8+
@@ -41,7 +41,8 @@
     uvicorn main:app --reload
 
 If your file is inside a folder the same as this project (e.g., python-projects/python-code/advanced/pythonlibs/fastapi-example.py), 
-run: uvicorn phyton-code.advanced.pythonlibs.fastapi-example:app --reload
+# run: 
+    uvicorn phyton-code.advanced.pythonlibs.fastapi-example:app --reload
 
 # Access the Service
     After running, the API will be available at:
