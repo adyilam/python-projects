@@ -9,9 +9,10 @@
 # Project Structure
     python-projects/
        ├── python-code/
-           ├── pythonLibs/
+         ├── advanced/
+           ├── pythonlibs/
                 ├── fastapi-example.py
-                ├── README.md
+                ├── README-fastapi1.md
 
 # Requirements
     Python 3.8+
