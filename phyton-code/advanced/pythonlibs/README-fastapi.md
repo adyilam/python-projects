@@ -11,11 +11,11 @@ Overview
 
 Project Structure
     python-projects/
-    ├── /python-code.py
-           |__pythonLibs/
-                |__ fastapi-example.py
-                |__ README.md
-
+       ├── python-code/
+           |── advanced/
+                |── pythonLibs/
+                    |── fastapi-example.py
+                    |── README.md
 Requirements
     Python 3.8+
     pip3
