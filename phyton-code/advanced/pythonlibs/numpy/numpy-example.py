@@ -75,10 +75,10 @@ print(d)
 # Loading and Saving arrays
 # Save an array to a binary file
 a = np.array([1, 2, 3, 4, 5])
-np.save('data.npy', a)
+np.save('../data.npy', a)
 
 # Load an array from a binary file
-b = np.load('data.npy')
+b = np.load('../data.npy')
 
 # Array statistics
 a = np.array([1, 2, 3, 4, 5])
