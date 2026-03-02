@@ -2,6 +2,7 @@
 Training a simple linear model to learn:
 y = 2x - 1
 """
+
 import numpy as np
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Input
