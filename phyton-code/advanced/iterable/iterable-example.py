@@ -56,8 +56,8 @@ class OddNumbers:
 
 
 # Create an instance of EvenNumbers
-even = OddNumbers()
-it = iter(even)
+odd = OddNumbers()
+it = iter(odd)
 
 # Print the first five even numbers
 print(next(it))
