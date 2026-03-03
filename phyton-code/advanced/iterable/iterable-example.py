@@ -18,6 +18,16 @@ Custom Iterator :
     Creating a custom iterator in Python involves defining a class that implements
     the __iter__() and __next__() methods according to the Python iterator protocol.
 """
+# iterator vs iterable example
+
+# Iterable: list
+numbers = [1, 2, 3]
+
+# Iterator: created using iter()
+it = iter(numbers)
+print(next(it))
+print(next(it))
+print(next(it))
 
 # An iterable: a list of numbers
 my_list = ["Abc", "Def", "Hij"]
