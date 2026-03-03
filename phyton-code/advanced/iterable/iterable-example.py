@@ -18,6 +18,16 @@ Custom Iterator :
     Creating a custom iterator in Python involves defining a class that implements
     the __iter__() and __next__() methods according to the Python iterator protocol.
 """
+# iterator vs iterable example
+
+# Iterable: list
+numbers = [1, 2, 3]
+
+# Iterator: created using iter()
+it = iter(numbers)
+print(next(it))
+print(next(it))
+print(next(it))
 
 # An iterable: a list of numbers
 my_list = ["Abc", "Def", "Hij"]
@@ -46,7 +56,7 @@ except StopIteration:
 # Custom Iterator
 class OddNumbers:
     def __iter__(self):
-        self.n = 1  # Start from the first even number
+        self.n = 1  # Start from the first odd number
         return self
 
     def __next__(self):
@@ -55,13 +65,36 @@ class OddNumbers:
         return x
 
 
-# Create an instance of EvenNumbers
+# Create an instance of oddNumbers
 odd = OddNumbers()
 it = iter(odd)
 
-# Print the first five even numbers
+# Print the first five odd numbers
 print(next(it))
 print(next(it))
 print(next(it))
 print(next(it))
 print(next(it))
+
+# StopIteration Exception
+list_ = [2, 4, 6, 8, 10]
+itr = iter(list_)
+
+while True:
+    try:
+        print(next(itr))
+    except StopIteration:
+        print(f"The iteration ended")
+        break
+
+# Option1, accessing each value of a list with index
+my_list = ['tv', 'speaker', 'computer']
+i = 0
+while i < len(my_list):
+    print(f"Index: {i}, Value: {my_list[i]}")
+    i += 1
+
+# Option2, accessing each value of a list with index
+my_list = ['tv', 'speaker', 'computer']
+for i in range(len(my_list)):
+    print(f"Index: {i}, Value: {my_list[i]}")
