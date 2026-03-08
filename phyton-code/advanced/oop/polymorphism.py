@@ -69,7 +69,7 @@ class Radio:
 
 class Computer:
     def use(self):
-        return "cpu"
+        return "Processor"
 
 
 # polymorphism lets functions accept different object types as long as they support needed behavior
