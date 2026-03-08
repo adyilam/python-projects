@@ -67,6 +67,11 @@ class Radio:
         return "Battery"
 
 
+class Computer:
+    def use(self):
+        return "Processor"
+
+
 # polymorphism lets functions accept different object types as long as they support needed behavior
 def show_use(tool):
     print(tool.use())
@@ -74,4 +79,4 @@ def show_use(tool):
 
 show_use(TV())
 show_use(Radio())
-
+show_use(Computer())
