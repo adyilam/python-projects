@@ -1,6 +1,6 @@
 import time
 
-from payment import CreditCardPayment, DebitCardPayment, CryptoPayment, PayPal
+from payment import CreditCardPayment, DebitCardPayment, CryptoPayment, PayPal, ApplePay
 
 
 class PaymentFactory:
@@ -24,7 +24,8 @@ class PaymentFactory:
         "creditCard": CreditCardPayment,
         "debitCard": DebitCardPayment,
         "crypto": CryptoPayment,
-        "paypal": PayPal
+        "paypal": PayPal,
+        "applepay": ApplePay
     }
 
     @staticmethod

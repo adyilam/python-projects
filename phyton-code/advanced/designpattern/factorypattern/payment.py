@@ -34,3 +34,8 @@ class PayPal(Payment):
 
     def pay(self, amount):
         print(f"you paid ${amount} with PayPal.")
+
+
+class ApplePay(Payment):
+    def pay(self, amount):
+        print(f"you paid ${amount} with ApplePay.")
